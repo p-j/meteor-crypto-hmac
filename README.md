@@ -4,18 +4,18 @@ packaged for Meteor.
 
 Dependency
 ----------
-- [jparker:meteor-crypto-base](https://github.com/p-j/meteor-crypto-base).
+- [`jparker:crypto-core`](https://github.com/p-j/meteor-crypto-core).
 
 Install
 -------
 
 Inside your project folder run
 ```
-$ meteor add jparker:meteor-crypto-hmac
+$ meteor add jparker:crypto-hmac
 ```
 
 You'll also need to have installed the package for the hash function you
-want to use, such as MD5 ([`jparker:meteor-crypto-md5`](https://github.com/p-j/meteor-crypto-md5)) or SHA1 ([`jparker:meteor-crypto-sha1`](https://github.com/p-j/meteor-crypto-sha1)). Once you have `jparker:meteor-crypto-hmac` installed, any `crypto-*` hash function packages you install will provide a corresponding method under the `CryptoJS` namespace.
+want to use, such as MD5 ([`jparker:crypto-md5`](https://github.com/p-j/meteor-crypto-md5)) or SHA1 ([`jparker:crypto-sha1`](https://github.com/p-j/meteor-crypto-sha1)). Once you have `jparker:crypto-hmac` installed, any `crypto-*` hash function packages you install will provide a corresponding method under the `CryptoJS` namespace.
 
 
 Usage
@@ -35,7 +35,7 @@ HMAC functions are documented at <https://code.google.com/p/crypto-js/#HMAC>.
 Related packages
 ----------------
 
-- [meteor-crypto-md5](https://github.com/p-j/meteor-crypto-md5)
-- [meteor-crypto-sha1](https://github.com/p-j/meteor-crypto-sha1)
-- [meteor-crypto-sha256](https://github.com/p-j/meteor-crypto-sha256)
-- [meteor-crypto-base64](https://github.com/p-j/meteor-crypto-base64)
+- [`jparker:crypto-md5`](https://github.com/p-j/meteor-crypto-md5)
+- [`jparker:crypto-sha1`](https://github.com/p-j/meteor-crypto-sha1)
+- [`jparker:crypto-sha256`](https://github.com/p-j/meteor-crypto-sha256)
+- [`jparker:crypto-base64`](https://github.com/p-j/meteor-crypto-base64)
