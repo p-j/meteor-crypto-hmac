@@ -1,25 +1,28 @@
 Package.describe({
 	summary: 'HMAC function for CryptoJS, standard secure crypto algorithms',
-	version: '3.1.2',
+	version: '0.1.0',
 	git: 'https://github.com/p-j/meteor-crypto-hmac.git'
 });
 
-Package.on_use(function (api) {
-	api.versionsFrom('METEOR@0.9.0');
-	api.use('jparker:crypto-core@3.1.2', ['client', 'server']);
+Package.onUse(function (api) {
+	api.versionsFrom('METEOR@0.9.1.1');
+
+	api.use('jparker:crypto-core@0.1.0', ['client', 'server']);
+
 	api.imply('jparker:crypto-core', ['client', 'server']);
-	api.add_files(['lib/hmac.js'], ['client', 'server']);
+
+	api.addFiles('lib/hmac.js', ['client', 'server']);
 });
 
-Package.on_test(function (api) {
+Package.onTest(function (api) {
 	api.use([
-		'jparker:crypto-core@3.1.2',
-		'jparker:crypto-hmac@3.1.2',
-		'jparker:crypto-md5@3.1.2',
-		'jparker:crypto-sha1@3.1.2',
-		'jparker:crypto-sha256@3.1.2',
+		'jparker:crypto-core@0.1.0',
+		'jparker:crypto-hmac@0.1.0',
+		'jparker:crypto-md5@0.1.0',
+		'jparker:crypto-sha1@0.1.0',
+		'jparker:crypto-sha256@0.1.0',
 		'tinytest'
-  ]);
+  ], ['client', 'server']);
 
-	api.add_files('tests/tests.js', ['client', 'server']);
+	api.addFiles('tests/tests.js', ['client', 'server']);
 });
