@@ -2,6 +2,8 @@
 (hash-based message authentication code) function from [CryptoJS](https://code.google.com/p/crypto-js/),
 packaged for Meteor.
 
+[![Build Status](https://travis-ci.org/p-j/meteor-crypto-hmac.svg)](https://travis-ci.org/p-j/meteor-crypto-hmac)
+
 Dependency
 ----------
 - [`jparker:crypto-core`](https://github.com/p-j/meteor-crypto-core).
